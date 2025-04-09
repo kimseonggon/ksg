@@ -1,0 +1,310 @@
+//디자인 시스템 폰트 사이즈
+
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+$font-size-14: 14px;
+$line-height-14: 22.4px;
+
+$font-size-20: 20px;
+$line-height-20: 24px;
+
+$font-size-22: 22px;
+$line-height-22: 28px;
+
+
+$font-size-26: 26px;
+$line-height-26: 34px;
+
+$font-size-34: 34px;
+$line-height-34: 48px;
+
+$font-size-36: 36px;
+$line-height-36: 48px;
+
+$font-size-50: 50px;
+$line-height-50: 56px;
+
+$font-size-60: 60px;
+$line-height-60: 82px;
+
+$font-size-62: 60px;
+$line-height-62: 82px;
+
+$font-size-10: 10px;
+$line-height-10: 15px;
+
+$font-size-12: 12px;
+$line-height-12: 18px;
+
+$font-size-16: 16px;
+$line-height-16: 24px;
+
+$font-size-18: 18px;
+$line-height-18: 27px;
+
+$font-size-24: 24px;
+$line-height-24: 36px;
+
+$font-size-28: 28px;
+$line-height-28: 42px;
+
+$font-size-34: 34px;
+$line-height-34: 51px;
+
+$font-size-48: 48px;
+$line-height-48: 72px;
+
+$font-size-56: 56px;
+$line-height-56: 84px;
+
+@mixin font-style($color: $black, $important: false, $font-size: '', $line-height: '', $letter-spacing: '', $font-weight: '') {
+
+  @if (type-of($value: $color) == color) {
+    color: $color;
+  }
+
+  @if $important {
+    font-size: $font-size !important;
+    line-height: $line-height !important;
+    letter-spacing: $letter-spacing !important;
+    font-weight: $font-weight !important;
+  } @else {
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+  }
+}
+
+@mixin headline1_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color,
+    $important: $important,
+    $font-size: $font-size-56,
+    $line-height: $line-height-56,
+    $letter-spacing: -0.5px,
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin headline2_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color,
+    $important: $important,
+    $font-size: $font-size-48,
+    $line-height:$line-height-48,
+    $letter-spacing: -0.4px,
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin headline3_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color,
+    $important: $important,
+    $font-size: $font-size-36,
+    $line-height: $line-height-36,
+    $letter-spacing: -0.5px,
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin headline3_B($color: false, $important: false) {
+    @include font-style(
+      $color: $color,
+      $important: $important,
+      $font-size: $font-size-36,
+      $line-height: $line-height-36,
+      $letter-spacing: -0.5px,
+      $font-weight: $font-weight-700
+    );
+}
+
+@mixin headline4_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color,
+    $important: $important,
+    $font-size: $font-size-28,
+    $line-height: $line-height-28,
+    $letter-spacing: -0.3px,
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin headline4_B($color: false, $important: false) {
+  @include font-style(
+    $color: $color,
+    $important: $important,
+    $font-size: $font-size-28,
+    $line-height: $line-height-28,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-700
+  );
+}
+
+@mixin headline5_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-24, 
+    $line-height: $line-height-24, 
+    $letter-spacing: -0.3px, 
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin headline5_B($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-24, 
+    $line-height: $line-height-24, 
+    $letter-spacing: -0.2px, 
+    $font-weight: $font-weight-700
+  );
+}
+
+@mixin subtitle1_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-18, 
+    $line-height: $line-height-18, 
+    $letter-spacing: -0.2px, 
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin subtitle1_B($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-18, 
+    $line-height: $line-height-18, 
+    $letter-spacing: -0.1px, 
+    $font-weight: $font-weight-700
+  );
+}
+
+@mixin subtitle2_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-16, 
+    $line-height: $line-height-16, 
+    $letter-spacing: -0.2px, 
+    $font-weight: $font-weight-500
+  );
+}
+
+
+@mixin subtitle2_B($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-16, 
+    $line-height: $line-height-16, 
+    $letter-spacing: -0.1px, 
+    $font-weight: $font-weight-700
+  );
+}
+
+@mixin body1_M($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-18, 
+    $line-height: $line-height-18, 
+    $letter-spacing: -0.3px, 
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin body1_R($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-18, 
+    $line-height: $line-height-18, 
+    $letter-spacing: -0.3px, 
+    $font-weight: $font-weight-400
+  );
+}
+
+@mixin body2_M($color: false, $important: false, $font-size: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-16, 
+    $line-height: $line-height-16, 
+    $letter-spacing: -0.2px, 
+    $font-weight: $font-weight-500
+  );
+}
+@mixin body2_R($color: false, $important: false, $font-size: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-16, 
+    $line-height: $line-height-16, 
+    $letter-spacing: -0.2px, 
+    $font-weight: $font-weight-400
+  );
+}
+
+@mixin body3_B($color: false, $important: false, $font-size: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-14, 
+    $line-height: $line-height-14, 
+    $letter-spacing: -0.4px, 
+    $font-weight: $font-weight-700
+  );
+}
+
+@mixin body3_M($color: false, $important: false, $font-size: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-14, 
+    $line-height: $line-height-14, 
+    $letter-spacing: -0.4px, 
+    $font-weight: $font-weight-500
+  );
+}
+
+@mixin body3_R($color: false, $important: false, $font-size: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-14, 
+    $line-height: $line-height-14, 
+    $letter-spacing: -0.4px, 
+    $font-weight: $font-weight-400
+  );
+}
+
+@mixin caption1_R($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-12, 
+    $line-height: $line-height-12, 
+    $letter-spacing: 0px, 
+    $font-weight: $font-weight-400
+  );
+}
+
+@mixin caption2_R($color: false, $important: false) {
+  @include font-style(
+    $color: $color, 
+    $important: $important, 
+    $font-size: $font-size-10, 
+    $line-height: $line-height-10, 
+    $letter-spacing: 0px, 
+    $font-weight: $font-weight-400
+  );
+}

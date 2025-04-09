@@ -1,0 +1,10 @@
+@import "../../../styles/font.scss";
+@import "../../../styles/color.scss";
+
+.link {
+    @include subtitle1_M($neutral70);
+    text-decoration: indianred;
+    &:hover {
+        color: $blue40;
+    }
+}
