@@ -1,0 +1,152 @@
+@import "../../../styles/font.scss";
+@import "../../../styles/color.scss";
+
+.button {}
+
+.button-xlarge {
+    padding: 7px 12px;
+    //.button-xlarge
+    min-height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.button-large {
+    //.button-large
+    min-height: 46px;
+    padding: 7px 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-medium {
+    //.button-medium
+    min-height: 40px;
+    padding: 7px 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-small {
+    //.button-small
+    min-height: 32px;
+    padding: 5px 8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button-high {
+    //.button-height
+    border-color: $primary60;
+    background-color: $primary60;
+    color: $white;
+
+    &:hover {
+        border-color: $primary70;
+        background-color: $primary70;
+    }
+
+    &:focus,
+    &:active {
+        border-color: $primary80;
+        background-color: $primary70;
+    }
+
+    &:disabled {
+        border-color: $neutral10;
+        background-color: $neutral10;
+
+
+        color: $neutral60;
+    }
+
+
+    &.error {
+        border-color: $error50;
+        background-color: $error50;
+
+        &:hover {
+            border-color: $error60;
+            background-color: $error60;
+        }
+    }
+}
+
+
+.button-middle {
+    //.button-middle
+    border-color: $primary60;
+    background-color: $white;
+    color: $primary60;
+
+    &:hover {
+        border-color: $primary70;
+    }
+
+    &:focus,
+    &:active {
+        border-color: $primary80;
+    }
+
+    &.error {
+        border-color: $error50;
+        color: $error60;
+    }
+
+    &:hover {
+        border-color: $error60;
+    }
+}
+
+
+.button-low {
+    //.button-low
+    border-color: $gray;
+    background-color: $white;
+    color: $neutral70;
+
+    &:hover {
+        background-color: $neutral5;
+    }
+
+    .button-error {
+        //.button-low-error
+        border-color: $neutral20;
+        background-color: $neutral20;
+        color: $red70;
+    }
+
+    &:hover {
+        background-color: $red10;
+    }
+
+    &:focus,
+    &:active {
+        background-color: $red10;
+    }
+
+    &:disabled {
+        border-color: $neutral10;
+        background-color: $neutral10;
+        color: $neutral60;
+    }
+}
+
+.button-done {
+    //.button-done
+    border-color: $neutral20;
+    background-color: $neutral20;
+    color: $blue60;
+
+    &:hover {
+        border-color: $blue10;
+        background-color: $blue10;
+    }
+
+    &:focus,
+    &:active {
+        border-color: $blue10;
+        background-color: $blue10;
+    }
+}
