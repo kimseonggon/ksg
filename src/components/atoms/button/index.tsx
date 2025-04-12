@@ -44,8 +44,6 @@ const ButtonComponent = (props: Props) => {
     let name = ``
     if (type) {
       name = type.split(' ').map(t => {
-        console.log('t', t)
-
         return styles[t]
       }).join(' ')
     }
