@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react';
 import styles from './style.module.scss'
-import ButtonComponent from '../../../atoms/button'
-import { buttonType } from '../../../../enum';
-import ChartComponent from '../../../atoms/chart';
+import ButtonComponent from '../../atoms/button'
+import { buttonType } from '../../../enum';
+import ChartComponent from '../../atoms/chart';
 
-const ChartPageConponent = () => {
+const ChartTemplateComponent = () => {
   const [value, setValue] = useState('')
   const textarea = useRef<HTMLTextAreaElement>(null)
 
   return (
-    <div className={styles.ui}>
+    <div className={styles.box}>
 
       <div className={styles.row}>
         <ChartComponent xAxis={{
@@ -101,4 +101,4 @@ const ChartPageConponent = () => {
   );
 };
 
-export default ChartPageConponent;
+export default ChartTemplateComponent;

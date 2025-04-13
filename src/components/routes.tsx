@@ -1,16 +1,16 @@
 
 import React, { ReactElement } from 'react';
-import HomeConponent from './pages/home';
-import MeConponent from './pages/me';
-import UIConponent from './pages/ui';
+import HomeComponent from './pages/home';
+import MeComponent from './pages/me';
+import UIComponent from './pages/ui';
 
 interface RouteItem {
-    path: string;
-    element: ReactElement;
+  path: string;
+  element: ReactElement;
 }
 
 export const routes: RouteItem[] = [
-  { path: '/', element: <HomeConponent /> },
-  { path: '/me', element: <MeConponent /> },
-  { path: '/ui', element: <UIConponent /> },
+  { path: '/', element: <HomeComponent /> },
+  { path: '/me', element: <MeComponent /> },
+  { path: '/ui', element: <UIComponent /> },
 ];

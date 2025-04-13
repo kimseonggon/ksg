@@ -1,7 +1,7 @@
-@import "../../../../styles/font.scss";
-@import "../../../../styles/color.scss";
+@import "../../../styles/font.scss";
+@import "../../../styles/color.scss";
 
-.ui {
+.box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,6 +10,5 @@
         margin: 8px;
         display: flex;
         align-items: center;
-        gap: 20px;
     }
 }

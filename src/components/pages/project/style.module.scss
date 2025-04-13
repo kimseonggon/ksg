@@ -1,0 +1,14 @@
+@import "../../../styles/font.scss";
+@import "../../../styles/color.scss";
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .row {
+        margin: 8px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

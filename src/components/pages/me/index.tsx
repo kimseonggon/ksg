@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss'
 
-const MeConponent = () => {
+const MeComponent = () => {
   return (
     <div >
       <section className="p-8 text-center bg-gray-100">
@@ -85,4 +85,4 @@ const MeConponent = () => {
   );
 };
 
-export default MeConponent;
+export default MeComponent;

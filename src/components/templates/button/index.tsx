@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react';
 import styles from './style.module.scss'
-import ButtonComponent from '../../../atoms/button'
-import { buttonType } from '../../../../enum';
+import ButtonComponent from '../../atoms/button'
+import { buttonType } from '../../../enum';
 
-const ButtonPageConponent = () => {
+const ButtonTemplateComponent = () => {
   const [value, setValue] = useState('')
   const textarea = useRef<HTMLTextAreaElement>(null)
 
   return (
-    <div className={styles.ui}>
+    <div className={styles.box}>
       <div className={styles.row}>
         <ButtonComponent
           label='XLARGE_LOW'
@@ -161,4 +161,4 @@ const ButtonPageConponent = () => {
   );
 };
 
-export default ButtonPageConponent;
+export default ButtonTemplateComponent;

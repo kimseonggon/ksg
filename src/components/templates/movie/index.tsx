@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react';
 import styles from './style.module.scss'
-import ButtonComponent from '../../../atoms/button'
-import { buttonType } from '../../../../enum';
-import InputComponent from '../../../atoms/input';
+import ButtonComponent from '../../atoms/button'
+import { buttonType } from '../../../enum';
+import InputComponent from '../../atoms/input';
 
-const InputPageConponent = () => {
+const MoveiTemplateComponent = () => {
   const [value, setValue] = useState('')
   const textarea = useRef<HTMLTextAreaElement>(null)
 
   return (
-    <div className={styles.ui}>
+    <div className={styles.box}>
       <div className={styles.row}>
         <InputComponent
           label='기본'
@@ -47,4 +47,4 @@ const InputPageConponent = () => {
   );
 };
 
-export default InputPageConponent;
+export default MoveiTemplateComponent;

@@ -4,7 +4,16 @@
 .link {
     @include subtitle1_M($neutral70);
     text-decoration: indianred;
+
     &:hover {
         color: $blue40;
     }
+}
+
+.disabled {
+    color: $blue40;
+    pointer-events: none;
+    color: gray;
+    cursor: not-allowed;
+    text-decoration: none;
 }

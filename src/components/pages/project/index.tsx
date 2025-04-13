@@ -23,10 +23,9 @@ const UIComponent = () => {
     <div className={styles.ui}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tab} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="버튼" {...a11yProps(0)} value={'button'} />
-          <Tab label="입력" {...a11yProps(1)} value={'input'} />
-          <Tab label="차트" {...a11yProps(2)} value={'chart'} />
-          {/* <Tab label="그리드" {...a11yProps(3)} value={'grid'} /> */}
+          <Tab label="영화 검색" {...a11yProps(0)} value={'movie'} />
+          {/* <Tab label="입력" {...a11yProps(1)} value={'input'} />
+          <Tab label="차트" {...a11yProps(2)} value={'chart'} /> */}
         </Tabs>
       </Box>
       <div className={styles.row}>

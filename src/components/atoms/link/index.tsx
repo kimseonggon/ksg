@@ -1,15 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import styles from './style.module.scss'
 
 interface Props {
-    label: string
-    to: string
+  label: string
+  to: string
 }
 const LinkComponent = (props: Props) => {
-    const {label, to} = props
+  const { label, to } = props
+  const location = useLocation();
   return (
-    <NavLink className={styles.link} to={to}>{label}</NavLink>
+    <NavLink className={`${styles.link} ${location.pathname === to ? styles.disabled : ''}`} to={to} >{label}</NavLink>
   );
 };
 
