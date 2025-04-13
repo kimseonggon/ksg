@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import ButtonPageConponent from './button';
 import InputPageConponent from './input';
+import ChartPageConponent from './chart';
 
 const UIConponent = () => {
   const [tab, setTab] = useState('button');
@@ -34,6 +35,7 @@ const UIConponent = () => {
       <div className={styles.row}>
         {tab === 'button' && <ButtonPageConponent />}
         {tab === 'input' && <InputPageConponent />}
+        {tab === 'chart' && <ChartPageConponent />}
       </div>
 
     </div>
