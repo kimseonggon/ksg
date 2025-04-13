@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import ButtonPageConponent from './button';
+import InputPageConponent from './input';
 
 const UIConponent = () => {
   const [tab, setTab] = useState('button');
@@ -25,12 +26,14 @@ const UIConponent = () => {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tab} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="버튼" {...a11yProps(0)} value={'button'} />
-          <Tab label="버튼" {...a11yProps(0)} value={'button'} />
-          <Tab label="그리드" {...a11yProps(1)} value={'grid'} />
+          <Tab label="입력" {...a11yProps(1)} value={'input'} />
+          <Tab label="차트" {...a11yProps(2)} value={'chart'} />
+          <Tab label="그리드" {...a11yProps(3)} value={'grid'} />
         </Tabs>
       </Box>
       <div className={styles.row}>
         {tab === 'button' && <ButtonPageConponent />}
+        {tab === 'input' && <InputPageConponent />}
       </div>
 
     </div>
