@@ -1,13 +1,15 @@
+@import "../../../styles/color.scss";
+
 .projectIntro {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 24px;
     padding: 16px 20px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #007aff;
+    background-color: $neutral1;
+    border-left: 4px solid $primary40;
     border-radius: 6px;
-    color: #333;
+    color: $neutral80;
     line-height: 1.6;
 }
 
@@ -28,7 +30,7 @@
     display: flex;
     gap: 20px;
     padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $gray;
 }
 
 .bookThumbnail {
@@ -36,7 +38,7 @@
     height: 174px;
     object-fit: cover;
     flex-shrink: 0;
-    border: 1px solid #ddd;
+    border: 1px solid $gray;
 }
 
 .bookContent {
@@ -50,7 +52,7 @@
 .bookTitle {
     font-size: 18px;
     font-weight: bold;
-    color: #222;
+    color: $neutral90;
     margin-bottom: 6px;
     line-height: 1.4;
     text-align: left;
@@ -58,14 +60,14 @@
 
 .bookMeta {
     font-size: 14px;
-    color: #666;
+    color: $neutral60;
     margin-bottom: 8px;
     text-align: left;
 }
 
 .bookPrice {
     font-size: 15px;
-    color: #000;
+    color: $black;
     font-weight: 500;
     margin-bottom: 8px;
     text-align: left;
@@ -73,7 +75,7 @@
 
 .bookDescription {
     font-size: 13px;
-    color: #444;
+    color: $neutral80;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -87,9 +89,9 @@
     /* 👈 원하는 높이로 조정 */
     overflow-y: auto;
     padding-right: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid $gray;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: $white;
 }
 
 .scrollContainer::-webkit-scrollbar {
