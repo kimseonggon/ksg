@@ -1,6 +1,5 @@
-import React from 'react';
-import styles from './style.module.scss'
-import LinkComponent from '../../atoms/link/index'
+import styles from './style.module.scss';
+import LinkComponent from '../../atoms/link/index';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {

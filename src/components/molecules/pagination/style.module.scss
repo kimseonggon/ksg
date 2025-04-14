@@ -1,0 +1,36 @@
+@import "../../../styles/font.scss";
+@import "../../../styles/color.scss";
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.pageButton {
+    padding: 6px 12px;
+    border: 1px solid $gray;
+    background-color: $white;
+    color: $black;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pageButton:hover {
+    background-color: $gray;
+}
+
+.active {
+    background-color: $primary60;
+    color: white;
+    border-color: $primary60;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

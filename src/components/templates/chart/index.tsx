@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
-import styles from './style.module.scss'
-import ButtonComponent from '../../atoms/button'
+import { useState, useRef } from 'react';
+import styles from './style.module.scss';
+import ButtonComponent from '../../atoms/button';
 import { buttonType } from '../../../enum';
 import ChartComponent from '../../atoms/chart';
 

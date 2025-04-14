@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from './style.module.scss'
-import { makeStyles } from "@mui/material/styles"
-import Button from '@mui/material/Button'
+import styles from './style.module.scss';
+import Button from '@mui/material/Button';
 interface Props {
   label: string
   variant?: 'text' | 'outlined' | 'contained'
@@ -40,7 +39,7 @@ const ButtonComponent = (props: Props) => {
     }, 500)
   }
 
-  const className = () => {
+  const classNameFn = () => {
     let name = ``
     if (type) {
       name = type.split(' ').map(t => {
@@ -52,7 +51,7 @@ const ButtonComponent = (props: Props) => {
 
   return (
     <Button
-      className={className()}
+      className={classNameFn()}
       variant={variant}
       disabled={disabledToUse}
       onClick={wrappedOnClick}

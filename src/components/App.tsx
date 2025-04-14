@@ -1,11 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import logo from '../logo.svg';
 import './App.css';
 import Header from './templates/header/index';
-import UIComponent from './pages/ui/index';
-import HomeComponent from './pages/home/index';
-import MeComponent from './pages/me/index';
 import { routes } from './routes';
 
 type Props = {

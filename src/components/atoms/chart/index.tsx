@@ -1,5 +1,5 @@
-import React, { CSSProperties } from 'react';
-import ReactECharts from 'echarts-for-react'
+import { CSSProperties } from 'react';
+import ReactECharts from 'echarts-for-react';
 interface Props {
   legend?: any
   xAxis?: any
