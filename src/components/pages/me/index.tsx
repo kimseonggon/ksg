@@ -1,84 +1,96 @@
 
 const MeComponent = () => {
   return (
-    <div >
-      <section className="p-8 text-center bg-gray-100">
-        <h1 className="text-3xl font-bold">안녕하세요!</h1>
-        <h2 className="text-xl mt-2 font-medium">6년차 웹 프론트엔드 개발자 김성곤입니다.</h2>
-        <p className="mt-4 text-gray-600">
-          Angular, Vue, React 등 다양한 프레임워크를 활용해 스마트팩토리 및 물류 시스템을 설계·개발했습니다.
-        </p>
-      </section>
+    <div className="p-6 max-w-4xl mx-auto space-y-6 whitespace-pre-line text-sm">
+      <h1 className="text-2xl font-bold">김성곤</h1>
+      <p>이메일: shuw75@gmail.com</p>
+      <p>연락처: 01032599295</p>
 
-      <section className="p-8 max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <ul className="text-sm leading-relaxed">
-          <li><strong>이름:</strong> 김성곤</li>
-          <li><strong>이메일:</strong> shuw75@gmail.com</li>
-          <li><strong>연락처:</strong> 010-3259-9295</li>
-        </ul>
-      </section>
+      <p>안녕하세요, 6년 차 웹 프론트엔드 개발자 김성곤입니다.
 
-      <section className="p-8 max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-        <p className="leading-relaxed">
-          메져에이드에서 스마트팩토리 시스템을 풀스택으로 개발하며 커리어를 시작했습니다.
-          이후 물류 회사인 <strong>㈜두핸즈</strong>에 합병되어 풀필먼트 시스템 초기 기획부터 개발에 참여했고,
-          프론트 파트 리더로 React 기반의 시스템을 총괄했습니다.
-        </p>
-      </section>
+        개발 커리어는 2018년 메져에이드에서 스마트팩토리 시스템(MES, WMS, SPC)을 풀스택으로 개발하면서 시작했습니다. Angular로 시작하여 Vue로의 마이그레이션을 경험했고, 센서 장비와의 연동, 시각화 시스템까지 다양한 산업현장의 시스템을 개발하며 기술뿐 아니라 문제 해결 중심의 사고를 익혔습니다.
 
-      <section className="p-8 max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        2020년부터는 물류 회사인 두핸즈로 합병되면서, 새로운 풀필먼트 시스템을 기획 초기부터 설계, 개발, 운영까지 전 주기에 걸쳐 주도적으로 참여하였습니다. React 기반의 프론트엔드를 구축하면서 아토믹 디자인 패턴 도입, 컴포넌트 재사용 최적화, 디자인 시스템 정립 등 구조적인 UI 개선을 이끌었고, 이후 프론트 파트 리더로서 팀원들과 함께 품질 중심의 개발 문화를 만들어 왔습니다.
 
-        <div className="space-y-6">
-          {/* 두핸즈 */}
-          <div>
-            <h3 className="text-xl font-bold">㈜두핸즈 (2020.01 ~ 2024.06)</h3>
-            <p className="text-sm text-gray-700 mb-2">품고 풀필먼트 시스템 / 홈페이지 구축</p>
-            <ul className="list-disc ml-6 text-sm text-gray-700 space-y-1">
-              <li>초기 시스템 설계 및 현장 조사 기반의 요구 분석</li>
-              <li>아토믹 디자인 패턴 도입 → 컴포넌트 재사용 및 UI 일관성 확보</li>
-              <li>도메인 4분화로 사용자 맞춤형 서비스 제공</li>
-              <li>백오피스 개발, 웹소켓 기반 파일 업로드 기능 구현</li>
-              <li>D3 차트 시각화 및 커스터마이징 그리드 개발</li>
-              <li>Strapi 도입으로 CMS 및 홈페이지 연동 개발</li>
-              <li>Slack + DataDog 연동 → 알림 및 장애 추적 자동화</li>
-              <li>Cypress 도입으로 기본 테스트 환경 구축</li>
-              <li><strong>기술 스택:</strong> React, TypeScript, MobX, AUIGrid, ECharts, D3, Cypress, Strapi</li>
-            </ul>
-          </div>
+        저는 약속과 일정 관리를 매우 중요하게 생각합니다. 정해진 일정은 곧 팀과의 약속이라는 생각으로 업무를 계획하고 실행하며, 마감 기한을 지키는 것에 책임감을 가지고 있습니다. 또한, 개발은 혼자만의 작업이 아니라고 생각합니다. 기획자, 디자이너, 백엔드 개발자 등 다양한 협업자들과 지속적으로 소통하고 피드백을 주고받으며 함께 완성도 높은 결과물을 만들어가는 데에 가치를 두고 있습니다.
 
-          {/* 메져에이드 */}
-          <div>
-            <h3 className="text-xl font-bold">㈜메져에이드 (2018.01 ~ 2019.12)</h3>
-            <p className="text-sm text-gray-700 mb-2">스마트팩토리 1.0 / 2.0</p>
-            <ul className="list-disc ml-6 text-sm text-gray-700 space-y-1">
-              <li>MES, WMS, SPC 풀스택 개발 (Angular + Node + PostgreSQL)</li>
-              <li>Vue 마이그레이션 및 Raspberry Pi + Electron 활용한 IoT 연동</li>
-              <li>실시간 생산 공정 데이터 시각화 기능 구현</li>
-              <li><strong>기술 스택:</strong> Angular, Vue, Electron, Node.js, PostgreSQL</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        풀스택 경험을 바탕으로 프론트엔드에 집중해 온 저는, 사용자 중심의 화면 설계, UI 일관성, 성능 최적화, 테스트 기반 개발 등 완성도 높은 웹 서비스 구현에 관심이 많습니다.
 
-      <section className="p-8 max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Education</h2>
-        <p className="text-sm text-gray-700">
-          성공회대학교 컴퓨터공학과 (2010.03 ~ 2015.03)
-        </p>
-      </section>
+        앞으로도 ‘기획부터 함께 고민하고, 팀과 함께 성장하는 개발자’로서 더욱 나은 서비스를 만들기 위해 고민하고 도전하겠습니다.</p>
 
-      <section className="p-8 max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-        <ul className="grid grid-cols-2 gap-4 text-sm leading-relaxed">
-          <li><strong>Frontend:</strong> React, Vue.js, Angular, TypeScript, Sass</li>
-          <li><strong>Backend:</strong> Node.js, PostgreSQL, Strapi</li>
-          <li><strong>Tools:</strong> Git, GitHub, Slack, Cypress, DataDog</li>
-          <li><strong>Visualization:</strong> D3.js, ECharts, AUIGrid</li>
-        </ul>
-      </section>
+      <h2 className="text-xl font-semibold">경력</h2>
+      <p><strong>주식회사 두핸즈 (2020.01 - 2024.06)</strong>
+
+        품고 풀필먼트 서비스 구축
+        회사 합병 이후 새롭게 서비스 개발을 진행하였습니다. 서비스 개발에 있어 기획부터 같이 참여하면서 DB설계 및 기능기획, 화면 기획 등을 참여하면서 개발을 진행하였고 프론트 개발 시에는 아토믹 디자인 패턴으로 컴포넌트 개발을 하며 재활용하였습니다.
+        풀필먼스 서비스로 상품 등록부터 시작하여 입고, WMS, OMS, LMS, 출고 처리까지 업무 프로세스 개발을 진행
+        도메인을 4개로 분리(내부 업무, 이용 고객, 센터별 리드, 관리자)하여 용도에 맞는 서비스 제공
+
+        [주요 업무]
+        - 초기 서비스 기획 및 시스템 설계 참여
+        * 풀필먼트 서비스의 전체 흐름을 이해하기 위해 한 달간 물류센터 현장에서 직접 업무를 관찰
+        * 이를 기반으로 시스템의 데이터 흐름과 사용자 요구사항을 정리
+        * 도메인을 총 4개(내부 업무, 고객용, 센터 리드, 관리자)로 분리하여 서비스 설계
+
+        - 프론트엔드 리딩
+        * 2021년 프론트 리더 퇴사 이후 팀을 리딩, 최대 프론트 개발자 6명까지 경험
+
+        - UI/UX 설계 및 프론트 구조 설계
+        * 프로젝트 초기 단계부터 UI 가이드를 기반으로 컴포넌트 구조를 명확히 정의
+        * 디자인과 실제 화면이 점차 달라지는 문제를 해결하기 위해 디자인 시스템(색상, 버튼, 입력 필드)을 자체적으로 구축 진행
+
+        - 기능 개발
+        * 주요 로직은 MobX로 상태 관리하되, Context API로 글로벌 상태 분리하여 유지보수성 향상
+        * 공통 레이아웃/버튼/테이블 등 재사용 컴포넌트를 정의하고 전 프로젝트에서 활용
+        * 파일 업로드 기능 개발
+        * 대용량 파일 업로드 시 진행상황을 사용자에게 보여주기 위해 웹소켓 기반의 업로드 상태 알림 기능을 구현
+        * 기본 정보 및 주문 정보를 엑셀 양식 업로드 기능 개발
+        * 리스트, 생성, 상세 화면 기본 구성 개발
+        * 신규 페이지 개발 속도 향상
+        * module scss 도입
+        * 디자인 시스템에 맞춘 색상/여백/폰트 등 전역 변수 활용
+        * 스타일 수정 시 전역 변경 가능
+        * 데이터 시각화 (EChart)
+        * 바코드 스캔 기반 출고 시스템 개발
+        * DataDog + Slack 연동 실시간 장애 모니터링 시스템 구축
+        * Cypress 도입으로 프론트엔드 테스트 자동화
+        * Strapi를 통한 홈페이지 콘텐츠 관리
+
+        기술 스택: React, TypeScript, MobX, AUIGrid, ECharts, D3.js, Cypress, Sass, Module CSS, WebSocket, Context API, Strapi, Slack, DataDog</p>
+
+      <p><strong>주식회사 메져에이드 (2018.01 - 2019.12)</strong>
+
+        [스마트팩토리 2.0]
+        - Angular로 개발한 시스템에서 Vue로 마이그레이션
+        * 사용자 피드백 기반 UI 개선
+        * 컴포넌트 기반 구조 도입
+
+        - 간단한 ERP시스템 추가
+        * 업무일지, 휴가 관리, 일정관리, 조직관리
+
+        - 설비 관리 및 라즈베리파이 기반 센서 연동
+        * Electron Vue 기반 시각화 UI
+        * 데스크탑 앱으로 장비 제어 가능
+
+        기술 스택: Vue, Electron Vue
+
+        [스마트팩토리 1.0]
+        - MES, WMS, SPC 풀스택 개발
+        - Angular, Node.js, PostgreSQL 기반 시스템 설계 및 운영
+        - 센서 기반 실시간 공정 시각화
+
+        기술 스택: Angular, TypeScript, Node.js, PostgreSQL</p>
+
+      <h2 className="text-xl font-semibold">학력</h2>
+      <p>성공회대학교 컴퓨터공학과 (2010.03 - 2015.03)</p>
+
+      <h2 className="text-xl font-semibold">스킬</h2>
+      <p>Git, React, TypeScript, HTML, Node.js, CSS, GitHub, React.js, PostgreSQL, Angular, VueJS, NodeJS, Slack, JavaScript</p>
+
+      <h2 className="text-xl font-semibold">링크</h2>
+      <a className="text-blue-500" href="https://github.com/kimseonggon/ksg" target="_blank" rel="noopener noreferrer">
+        https://github.com/kimseonggon/ksg
+      </a>
     </div>
   );
 };
