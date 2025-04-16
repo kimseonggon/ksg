@@ -13,19 +13,10 @@ const ButtonComponent = (props: Props) => {
   const { label, type, variant = 'contained', disabled = false, onClick } = props
   const [disabledToUse, setDisabledToUse] = useState(disabled)
   const lastReceivedDisabled = useRef(disabled)
-  const timeout = useRef(null)
 
   useEffect(() => {
     setDisabledToUse(disabled)
     lastReceivedDisabled.current = disabled
-
-
-    return () => {
-      if (timeout.current) {
-        // 타이머 발동 전 컴포넌트가 사라진다면 타이머를 끄고 사라진다.
-        clearTimeout(timeout.current)
-      }
-    }
   }, [disabled])
 
   /**

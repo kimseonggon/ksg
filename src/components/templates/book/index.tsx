@@ -33,6 +33,7 @@ const BookTemplateComponent = () => {
 
   useEffect(() => {
     if (query) searchBooks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [start]);
 
   const handleSearch = () => {
