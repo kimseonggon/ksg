@@ -40,5 +40,5 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /home/ubuntu/app
-            pm2 restart frontend || pm2 start npx --name frontend -- serve -s build -l 3000
+            cd /ksg
+            pm2 restart yarn || pm2 start npx --name yarn -- serve -s build -l 3000
