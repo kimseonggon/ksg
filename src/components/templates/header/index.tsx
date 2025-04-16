@@ -6,7 +6,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.left}>
         <div className={styles.img}>
-          <img src="./ksg.jpeg" />
+          <img src="./ksg.jpeg" alt="이미지" />
         </div>
         <span>고니프로젝트</span>
       </div>
