@@ -3,7 +3,7 @@ const MeComponent = () => {
   return (
     <div >
       <section className="p-8 text-center bg-gray-100">
-        <h1 className="text-3xl font-bold">안녕하세요! 👋</h1>
+        <h1 className="text-3xl font-bold">안녕하세요!</h1>
         <h2 className="text-xl mt-2 font-medium">6년차 웹 프론트엔드 개발자 김성곤입니다.</h2>
         <p className="mt-4 text-gray-600">
           Angular, Vue, React 등 다양한 프레임워크를 활용해 스마트팩토리 및 물류 시스템을 설계·개발했습니다.
