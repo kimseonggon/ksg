@@ -8,7 +8,7 @@ interface Props {
   style?: CSSProperties
   formatter?: (params: unknown) => string
   setRef?: (T: unknown) => void
-  options?: unknown
+  options?: never
   onClick?: () => void
 }
 
