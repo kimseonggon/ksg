@@ -1,9 +1,7 @@
 import styles from './style.module.scss';
 import LinkComponent from '../../atoms/link/index';
-import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const location = useLocation();
   return (
     <div className={styles.header}>
       <div className={styles.left}>

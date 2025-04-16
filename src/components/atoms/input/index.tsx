@@ -9,7 +9,7 @@ interface Props {
   onKeyDown?: KeyboardEventHandler
 }
 const InputComponent = (props: Props) => {
-  const { label, type, password = false, onChange, onKeyDown, onClick } = props
+  const { label, password = false, onChange, onKeyDown, onClick } = props
 
   return (
     <TextField

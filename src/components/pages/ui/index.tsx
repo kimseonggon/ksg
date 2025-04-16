@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import styles from './style.module.scss'
+import React, { useState } from 'react';
+import styles from './style.module.scss';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';

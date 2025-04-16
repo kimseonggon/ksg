@@ -13,14 +13,14 @@ const InputTemplateComponent = () => {
       <div className={styles.row}>
         <InputComponent
           label='기본'
-          onClick={(e) => {
+          onClick={() => {
             setValue(`<InputComponent label='기본' />`)
           }}
         />
         <InputComponent
           label='패스워드'
           password={true}
-          onClick={(e) => {
+          onClick={() => {
             setValue(`<InputComponent label='패스워드' password={true} />`)
           }}
         />

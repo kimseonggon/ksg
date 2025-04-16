@@ -1,14 +1,14 @@
 import { CSSProperties } from 'react';
 import ReactECharts from 'echarts-for-react';
 interface Props {
-  legend?: any
-  xAxis?: any
-  yAxis?: any
-  series: any
+  legend?: unknown
+  xAxis?: unknown
+  yAxis?: unknown
+  series: unknown
   style?: CSSProperties
-  formatter?: (params: any) => string
-  setRef?: (T: any) => void
-  options?: any
+  formatter?: (params: unknown) => string
+  setRef?: (T: unknown) => void
+  options?: unknown
   onClick?: () => void
 }
 
