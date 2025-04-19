@@ -36,7 +36,6 @@ const Pagination = (props: PaginationProps) => {
                 onClick={() => onPageChange(currentPage - 1)}
             />
             {pages.map((page) => (
-
                 <ButtonComponent
                     key={page}
                     label={page.toString()}

@@ -1,5 +1,5 @@
-@import "../../../styles/font.scss";
-@import "../../../styles/color.scss";
+@use"../../../styles/font";
+@use"../../../styles/color";
 
 .box {
     display: flex;

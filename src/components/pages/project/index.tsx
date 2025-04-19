@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import BookTemplateComponent from '../../templates/book';
+import I18nTemplateComponent from '../../templates/i18n';
 const ProjectComponent = () => {
   const [tab, setTab] = useState('book');
 
@@ -22,12 +23,13 @@ const ProjectComponent = () => {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tab} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="책 검색" {...a11yProps(0)} value={'book'} />
-          {/* <Tab label="입력" {...a11yProps(1)} value={'input'} />
-          <Tab label="차트" {...a11yProps(2)} value={'chart'} /> */}
+          <Tab label="번역" {...a11yProps(1)} value={'i18n'} />
+          {/* <Tab label="차트" {...a11yProps(2)} value={'chart'} /> */}
         </Tabs>
       </Box>
       <div className={styles.row}>
         {tab === 'book' && <BookTemplateComponent />}
+        {tab === 'i18n' && <I18nTemplateComponent />}
       </div>
 
     </div>

@@ -1,5 +1,5 @@
-@import "../../../styles/font.scss";
-@import "../../../styles/color.scss";
+@use"../../../styles/font";
+@use"../../../styles/color";
 
 .button-xlarge {
     padding: 7px 12px;
@@ -36,37 +36,37 @@
 
 .button-high {
     //.button-height
-    border-color: $primary60;
-    background-color: $primary60;
-    color: $white;
+    border-color: color.$primary60;
+    background-color: color.$primary60;
+    color: color.$white;
 
     &:hover {
-        border-color: $primary70;
-        background-color: $primary70;
+        border-color: color.$primary70;
+        background-color: color.$primary70;
     }
 
     &:focus,
     &:active {
-        border-color: $primary80;
-        background-color: $primary70;
+        border-color: color.$primary80;
+        background-color: color.$primary70;
     }
 
     &:disabled {
-        border-color: $neutral10;
-        background-color: $neutral10;
+        border-color: color.$neutral10;
+        background-color: color.$neutral10;
 
 
-        color: $neutral60;
+        color: color.$neutral60;
     }
 
 
     &.error {
-        border-color: $error50;
-        background-color: $error50;
+        border-color: color.$error50;
+        background-color: color.$error50;
 
         &:hover {
-            border-color: $error60;
-            background-color: $error60;
+            border-color: color.$error60;
+            background-color: color.$error60;
         }
     }
 }
@@ -74,78 +74,78 @@
 
 .button-middle {
     //.button-middle
-    border-color: $primary60;
-    background-color: $white;
-    color: $primary60;
+    border-color: color.$primary60;
+    background-color: color.$white;
+    color: color.$primary60;
 
     &:hover {
-        border-color: $primary70;
+        border-color: color.$primary70;
     }
 
     &:focus,
     &:active {
-        border-color: $primary80;
+        border-color: color.$primary80;
     }
 
     &.error {
-        border-color: $error50;
-        color: $error60;
+        border-color: color.$error50;
+        color: color.$error60;
     }
 
     &:hover {
-        border-color: $error60;
+        border-color: color.$error60;
     }
 }
 
 
 .button-low {
     //.button-low
-    border-color: $gray;
-    background-color: $white;
-    color: $neutral70;
+    border-color: color.$gray;
+    background-color: color.$white;
+    color: color.$neutral70;
 
     &:hover {
-        background-color: $neutral5;
+        background-color: color.$neutral5;
     }
 
     .button-error {
         //.button-low-error
-        border-color: $neutral20;
-        background-color: $neutral20;
-        color: $red70;
+        border-color: color.$neutral20;
+        background-color: color.$neutral20;
+        color: color.$red70;
     }
 
     &:hover {
-        background-color: $red10;
+        background-color: color.$red10;
     }
 
     &:focus,
     &:active {
-        background-color: $red10;
+        background-color: color.$red10;
     }
 
     &:disabled {
-        border-color: $neutral10;
-        background-color: $neutral10;
-        color: $neutral60;
+        border-color: color.$neutral10;
+        background-color: color.$neutral10;
+        color: color.$neutral60;
     }
 }
 
 .button-done {
     //.button-done
-    border-color: $neutral20;
-    background-color: $neutral20;
-    color: $blue60;
+    border-color: color.$neutral20;
+    background-color: color.$neutral20;
+    color: color.$blue60;
 
     &:hover {
-        border-color: $blue10;
-        background-color: $blue10;
+        border-color: color.$blue10;
+        background-color: color.$blue10;
     }
 
     &:focus,
     &:active {
-        border-color: $blue10;
-        background-color: $blue10;
+        border-color: color.$blue10;
+        background-color: color.$blue10;
     }
 }
 
@@ -153,34 +153,34 @@
 
 .pageButton {
     padding: 6px 12px;
-    border: 1px solid $gray;
-    background-color: $white;
-    color: $black;
+    border: 1px solid color.$gray;
+    background-color: color.$white;
+    color: color.$black;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
     transition: 0.2s ease;
 
     &:hover {
-        background-color: $gray;
+        background-color: color.$gray;
     }
 
     .button-error {
         //.button-low-error
-        border-color: $neutral20;
-        background-color: $neutral20;
-        color: $red70;
+        border-color: color.$neutral20;
+        background-color: color.$neutral20;
+        color: color.$red70;
     }
 
     &:hover {
-        background-color: $red10;
+        background-color: color.$red10;
     }
 
     &:focus,
     &:active {
-        background-color: $primary60;
+        background-color: color.$primary60;
         color: white;
-        border-color: $primary60;
+        border-color: color.$primary60;
     }
 
     &:disabled {

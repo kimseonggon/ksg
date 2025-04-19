@@ -1,17 +1,17 @@
-@import "../../../styles/font.scss";
-@import "../../../styles/color.scss";
+@use"../../../styles/font";
+@use"../../../styles/color";
 
 .link {
-    @include subtitle1_M($neutral70);
+    @include font.subtitle1_M(color.$neutral70);
     text-decoration: indianred;
 
     &:hover {
-        color: $blue40;
+        color: color.$blue40;
     }
 }
 
 .disabled {
-    color: $blue40;
+    color: color.$blue40;
     pointer-events: none;
     color: gray;
     cursor: not-allowed;

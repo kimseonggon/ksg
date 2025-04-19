@@ -59,9 +59,9 @@ $line-height-48: 72px;
 $font-size-56: 56px;
 $line-height-56: 84px;
 
-@mixin font-style($color: $black, $important: false, $font-size: '', $line-height: '', $letter-spacing: '', $font-weight: '') {
+@mixin font-style($color: color.$black, $important: false, $font-size: '', $line-height: '', $letter-spacing: '', $font-weight: '') {
 
-  @if (type-of($value: $color) == color) {
+  @if (type-of($value: $color)==color) {
     color: $color;
   }
 
@@ -70,7 +70,9 @@ $line-height-56: 84px;
     line-height: $line-height !important;
     letter-spacing: $letter-spacing !important;
     font-weight: $font-weight !important;
-  } @else {
+  }
+
+  @else {
     font-size: $font-size;
     line-height: $line-height;
     letter-spacing: $letter-spacing;
@@ -79,232 +81,191 @@ $line-height-56: 84px;
 }
 
 @mixin headline1_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color,
+  @include font-style($color: $color,
     $important: $important,
     $font-size: $font-size-56,
     $line-height: $line-height-56,
     $letter-spacing: -0.5px,
-    $font-weight: $font-weight-500
-  );
+    $font-weight: $font-weight-500 );
 }
 
 @mixin headline2_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color,
+  @include font-style($color: $color,
     $important: $important,
     $font-size: $font-size-48,
-    $line-height:$line-height-48,
+    $line-height: $line-height-48,
     $letter-spacing: -0.4px,
-    $font-weight: $font-weight-500
-  );
+    $font-weight: $font-weight-500 );
 }
 
 @mixin headline3_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color,
+  @include font-style($color: $color,
     $important: $important,
     $font-size: $font-size-36,
     $line-height: $line-height-36,
     $letter-spacing: -0.5px,
-    $font-weight: $font-weight-500
-  );
+    $font-weight: $font-weight-500 );
 }
 
 @mixin headline3_B($color: false, $important: false) {
-    @include font-style(
-      $color: $color,
-      $important: $important,
-      $font-size: $font-size-36,
-      $line-height: $line-height-36,
-      $letter-spacing: -0.5px,
-      $font-weight: $font-weight-700
-    );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-36,
+    $line-height: $line-height-36,
+    $letter-spacing: -0.5px,
+    $font-weight: $font-weight-700 );
 }
 
 @mixin headline4_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color,
+  @include font-style($color: $color,
     $important: $important,
     $font-size: $font-size-28,
     $line-height: $line-height-28,
     $letter-spacing: -0.3px,
-    $font-weight: $font-weight-500
-  );
+    $font-weight: $font-weight-500 );
 }
 
 @mixin headline4_B($color: false, $important: false) {
-  @include font-style(
-    $color: $color,
+  @include font-style($color: $color,
     $important: $important,
     $font-size: $font-size-28,
     $line-height: $line-height-28,
     $letter-spacing: -0.2px,
-    $font-weight: $font-weight-700
-  );
+    $font-weight: $font-weight-700 );
 }
 
 @mixin headline5_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-24, 
-    $line-height: $line-height-24, 
-    $letter-spacing: -0.3px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-24,
+    $line-height: $line-height-24,
+    $letter-spacing: -0.3px,
+    $font-weight: $font-weight-500 );
 }
 
 @mixin headline5_B($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-24, 
-    $line-height: $line-height-24, 
-    $letter-spacing: -0.2px, 
-    $font-weight: $font-weight-700
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-24,
+    $line-height: $line-height-24,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-700 );
 }
 
 @mixin subtitle1_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-18, 
-    $line-height: $line-height-18, 
-    $letter-spacing: -0.2px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-18,
+    $line-height: $line-height-18,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-500 );
 }
 
 @mixin subtitle1_B($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-18, 
-    $line-height: $line-height-18, 
-    $letter-spacing: -0.1px, 
-    $font-weight: $font-weight-700
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-18,
+    $line-height: $line-height-18,
+    $letter-spacing: -0.1px,
+    $font-weight: $font-weight-700 );
 }
 
 @mixin subtitle2_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-16, 
-    $line-height: $line-height-16, 
-    $letter-spacing: -0.2px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-16,
+    $line-height: $line-height-16,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-500 );
 }
 
 
 @mixin subtitle2_B($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-16, 
-    $line-height: $line-height-16, 
-    $letter-spacing: -0.1px, 
-    $font-weight: $font-weight-700
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-16,
+    $line-height: $line-height-16,
+    $letter-spacing: -0.1px,
+    $font-weight: $font-weight-700 );
 }
 
 @mixin body1_M($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-18, 
-    $line-height: $line-height-18, 
-    $letter-spacing: -0.3px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-18,
+    $line-height: $line-height-18,
+    $letter-spacing: -0.3px,
+    $font-weight: $font-weight-500 );
 }
 
 @mixin body1_R($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-18, 
-    $line-height: $line-height-18, 
-    $letter-spacing: -0.3px, 
-    $font-weight: $font-weight-400
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-18,
+    $line-height: $line-height-18,
+    $letter-spacing: -0.3px,
+    $font-weight: $font-weight-400 );
 }
 
 @mixin body2_M($color: false, $important: false, $font-size: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-16, 
-    $line-height: $line-height-16, 
-    $letter-spacing: -0.2px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-16,
+    $line-height: $line-height-16,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-500 );
 }
+
 @mixin body2_R($color: false, $important: false, $font-size: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-16, 
-    $line-height: $line-height-16, 
-    $letter-spacing: -0.2px, 
-    $font-weight: $font-weight-400
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-16,
+    $line-height: $line-height-16,
+    $letter-spacing: -0.2px,
+    $font-weight: $font-weight-400 );
 }
 
 @mixin body3_B($color: false, $important: false, $font-size: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-14, 
-    $line-height: $line-height-14, 
-    $letter-spacing: -0.4px, 
-    $font-weight: $font-weight-700
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-14,
+    $line-height: $line-height-14,
+    $letter-spacing: -0.4px,
+    $font-weight: $font-weight-700 );
 }
 
 @mixin body3_M($color: false, $important: false, $font-size: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-14, 
-    $line-height: $line-height-14, 
-    $letter-spacing: -0.4px, 
-    $font-weight: $font-weight-500
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-14,
+    $line-height: $line-height-14,
+    $letter-spacing: -0.4px,
+    $font-weight: $font-weight-500 );
 }
 
 @mixin body3_R($color: false, $important: false, $font-size: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-14, 
-    $line-height: $line-height-14, 
-    $letter-spacing: -0.4px, 
-    $font-weight: $font-weight-400
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-14,
+    $line-height: $line-height-14,
+    $letter-spacing: -0.4px,
+    $font-weight: $font-weight-400 );
 }
 
 @mixin caption1_R($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-12, 
-    $line-height: $line-height-12, 
-    $letter-spacing: 0px, 
-    $font-weight: $font-weight-400
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-12,
+    $line-height: $line-height-12,
+    $letter-spacing: 0px,
+    $font-weight: $font-weight-400 );
 }
 
 @mixin caption2_R($color: false, $important: false) {
-  @include font-style(
-    $color: $color, 
-    $important: $important, 
-    $font-size: $font-size-10, 
-    $line-height: $line-height-10, 
-    $letter-spacing: 0px, 
-    $font-weight: $font-weight-400
-  );
+  @include font-style($color: $color,
+    $important: $important,
+    $font-size: $font-size-10,
+    $line-height: $line-height-10,
+    $letter-spacing: 0px,
+    $font-weight: $font-weight-400 );
 }

@@ -1,5 +1,5 @@
-@import "../../../styles/font.scss";
-@import "../../../styles/color.scss";
+@use "../../../styles/font";
+@use "../../../styles/color";
 
 .pagination {
     display: flex;
@@ -11,9 +11,9 @@
 
 .pageButton {
     padding: 6px 12px;
-    border: 1px solid $gray;
-    background-color: $white;
-    color: $black;
+    border: 1px solid color.$gray;
+    background-color: color.$white;
+    color: color.$black;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
@@ -21,13 +21,13 @@
 }
 
 .pageButton:hover {
-    background-color: $gray;
+    background-color: color.$gray;
 }
 
 .active {
-    background-color: $primary60;
-    color: white;
-    border-color: $primary60;
+    background-color: color.$primary60;
+    color: color.$white;
+    border-color: color.$primary60;
 }
 
 .disabled {

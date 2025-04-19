@@ -1,32 +1,37 @@
-@import "../../../styles/font.scss";
-@import "../../../styles/color.scss";
+@use"../../../styles/font";
+@use"../../../styles/color";
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $neutral40;
+    border-bottom: 1px solid color.$neutral40;
+
     .left {
         display: flex;
         align-items: center;
-        .img{
+
+        .img {
             width: 48px;
             height: 48px;
             border-radius: 70%;
             overflow: hidden;
             margin-left: 4px;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
+
         span {
-            @include headline3_B($neutral90);
+            @include font.headline3_B(color.$neutral90);
             margin-left: 8px;
         }
 
     }
+
     .right {
         nav {
             display: flex;
