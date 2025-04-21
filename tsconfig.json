@@ -24,5 +24,8 @@
     "src",
     "components/App.test.tsx",
     "components/App.tsx"
-  ]
+  ],
+  "ts-node": {
+    "esm": true
+  }
 }

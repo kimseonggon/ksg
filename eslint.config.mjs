@@ -7,16 +7,19 @@ export default [
   ...tseslint.configs.recommended,
   {
     plugins: { react },
-    files: ["**/*.tsx", "**/*.ts"],
+    files: ["**/*.tsx", "**/*.ts", '**/*.js',],
     languageOptions: {
       parserOptions: {
         ecmaVersion: 2021,
         sourceType: "module",
+        globals: {
+          process: 'readonly',
+        },
       },
     },
     rules: {
       "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
+      "react/react-in-jsx-scope": "off"
     },
   },
 ];
