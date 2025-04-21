@@ -1,4 +1,4 @@
-import '../../../i18n'; // i18n 초기화 불러오기
+import '../../../i18n_google'; // i18n 초기화 불러오기
 import { useTranslation } from 'react-i18next';
 
 const I18nTemplateComponent = () => {

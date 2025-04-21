@@ -1,4 +1,7 @@
 {
   "welcome": "환영합니다.",
-  "logout": "로그아웃"
+  "logout": "로그아웃",
+  "login": "로그인",
+  "username": "사용자 이름",
+  "password": "비밀번호"
 }
