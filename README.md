@@ -11,8 +11,12 @@
 
 - ✅ 자기소개서
 - ✅ 디자인가이드
-- ✅ NAVER Open API 연동 (책 검색)
-
+- ✅ 프로젝트
+    - NAVER Open API 연동 (책 검색)
+    - i18n 번역
+    - spread
+    - ag-grid
+    
 
 ## 🔧 기술 스택
 
@@ -28,3 +32,5 @@
 
 - **Node v16.13.1**
 - **React v18.0.0**
+- **AG GRID v33.3.0**
+- **spread v18.1.0**
