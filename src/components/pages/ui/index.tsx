@@ -6,6 +6,8 @@ import Tab from '@mui/material/Tab';
 import ButtonTemplateComponent from '../../templates/button';
 import InputTemplateComponent from '../../templates/input';
 import ChartTemplateComponent from '../../templates/chart';
+import SpreadTemplateComponent from '../../templates/spread';
+import AgGridTemplateComponent from '../../templates/ag_grid';
 const UIComponent = () => {
   const [tab, setTab] = useState('button');
 
@@ -26,6 +28,8 @@ const UIComponent = () => {
           <Tab label="버튼" {...a11yProps(0)} value={'button'} />
           <Tab label="입력" {...a11yProps(1)} value={'input'} />
           <Tab label="차트" {...a11yProps(2)} value={'chart'} />
+          <Tab label="spread" {...a11yProps(3)} value={'spread'} />
+          <Tab label="그리드" {...a11yProps(4)} value={'ag_grid'} />
           {/* <Tab label="그리드" {...a11yProps(3)} value={'grid'} /> */}
         </Tabs>
       </Box>
@@ -33,6 +37,8 @@ const UIComponent = () => {
         {tab === 'button' && <ButtonTemplateComponent />}
         {tab === 'input' && <InputTemplateComponent />}
         {tab === 'chart' && <ChartTemplateComponent />}
+        {tab === 'spread' && <SpreadTemplateComponent />}
+        {tab === 'ag_grid' && <AgGridTemplateComponent />}
       </div>
 
     </div>

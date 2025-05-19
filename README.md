@@ -11,11 +11,13 @@
 
 - ✅ 자기소개서
 - ✅ 디자인가이드
+    - 버트
+    - 입력
+    - spread
+    - ag-grid
 - ✅ 프로젝트
     - NAVER Open API 연동 (책 검색)
     - i18n 번역
-    - spread
-    - ag-grid
     
 
 ## 🔧 기술 스택
