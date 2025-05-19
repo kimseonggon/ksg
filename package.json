@@ -5,12 +5,19 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mescius/spread-sheets": "^18.1.0",
+    "@mescius/spread-sheets-charts": "^18.1.0",
+    "@mescius/spread-sheets-io": "^18.1.0",
+    "@mescius/spread-sheets-react": "^18.1.0",
+    "@mescius/spread-sheets-resources-ko": "^18.1.0",
+    "@mescius/spread-sheets-shapes": "^18.1.0",
     "@mui/material": "^7.0.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/node": "^22.14.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.1",
     "axios": "^1.8.4",
@@ -25,10 +32,9 @@
     "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
     "sass": "^1.86.3",
-    "web-vitals": "^2.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "@types/node": "^22.14.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
